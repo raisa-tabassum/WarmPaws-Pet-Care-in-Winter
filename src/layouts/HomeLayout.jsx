@@ -12,12 +12,12 @@ const HomeLayout = () => {
           {/* Navbar */}
           <div className="absolute top-0 left-0 w-full z-2">
             <nav className="w-11/12 mx-auto mt-4">
-              {/* <Navbar></Navbar> */}
+              <Navbar></Navbar>
             </nav>
           </div>
           {/* Slider */}
           <section>
-            {/* <HeroSlider></HeroSlider> */}
+            <HeroSlider></HeroSlider>
           </section>
         </section>
       </header>
@@ -28,7 +28,7 @@ const HomeLayout = () => {
         </section>
       </main>
       <footer className="bottom-0 left-0 w-full z-50">
-        {/* <Footer></Footer> */}
+        <Footer></Footer>
       </footer>
     </div>
   );
