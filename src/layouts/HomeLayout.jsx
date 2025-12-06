@@ -3,6 +3,9 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import HeroSlider from "../components/homePageLayouts/heroSlider";
 import PopularWinterCareServices from "../components/homePageLayouts/PopularWinterCareServices";
+import WinterCareTips from "../components/homePageLayouts/WinterCareTips";
+import MeetExpertVets from "../components/homePageLayouts/MeetExpertVets";
+import WorkingHoursAndFeatures from "../components/homePageLayouts/WorkingHoursAndFeatures";
 
 const HomeLayout = () => {
   return (
@@ -22,9 +25,12 @@ const HomeLayout = () => {
         </section>
       </header>
       {/* Other page content */}
-      <main>
+      <main className="bg-base-300" >
         <section className="w-11/12 mx-auto">
           <PopularWinterCareServices></PopularWinterCareServices>
+          <WinterCareTips></WinterCareTips>
+          <MeetExpertVets></MeetExpertVets>
+          <WorkingHoursAndFeatures></WorkingHoursAndFeatures>
         </section>
       </main>
       <footer className="bottom-0 left-0 w-full z-50">

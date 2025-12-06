@@ -1,35 +1,26 @@
 import React from "react";
 import { FaPaw } from "react-icons/fa";
+import { NavLink } from "react-router";
 
 const Navbar = () => {
   return (
     <div className="navbar bg-base-100 shadow-xs px-5">
       <div className="navbar-start">
         <div className="flex items-center gap-2">
-            <FaPaw className="text-4xl text-[##62cef5]" />
+            <FaPaw className="text-4xl text-sky-500" />
           <a className="text-2xl font-bold text-[#093680]">WarmPaws</a>
         </div>
       </div>
       <div className="navbar-center">
         <ul className="menu menu-horizontal px-1 text-xl text-[#131952] font-bold">
           <li>
-            <a>Home</a>
+            <NavLink to='/' className={({isActive})=>(isActive ? "active" : "")}>Home</NavLink>
           </li>
           <li>
-            <details>
-              <summary>Services</summary>
-              <ul className="p-2 bg-base-100 w-40 z-1">
-                <li>
-                  <a>Submenu 1</a>
-                </li>
-                <li>
-                  <a>Submenu 2</a>
-                </li>
-              </ul>
-            </details>
+            <NavLink to='/services' className={({isActive})=>(isActive ? "active" : "")}>Service</NavLink>
           </li>
           <li>
-            <a>My Profile</a>
+            <NavLink to='/profile' className={({isActive})=>(isActive ? "active" : "")}>My Profile</NavLink>
           </li>
         </ul>
       </div>

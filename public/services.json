@@ -8,7 +8,7 @@
     "rating": 4.9,
     "slotsAvailable": 4,
     "description": "Custom coat fitting and warm outfit options to keep your dog comfortable in the cold.",
-    "image": "https://i.postimg.cc/example1.png",
+    "image": "https://s3.amazonaws.com/cdn-origin-etr.akc.org/wp-content/uploads/2018/01/10143602/Poodle-puppy-wearing-a-jacket-in-winter.jpeg",
     "category": "Clothing"
   },
   {
@@ -20,7 +20,7 @@
     "rating": 4.8,
     "slotsAvailable": 3,
     "description": "Professional grooming with moisturizing paw balm and winter-safe shampoo.",
-    "image": "https://i.postimg.cc/example2.png",
+    "image": "https://www.brodieanimalhospital.com/blog/images/istock-969077342-2000x1333.1000x0-is.jpg",
     "category": "Grooming"
   },
   {
@@ -32,7 +32,7 @@
     "rating": 4.7,
     "slotsAvailable": 5,
     "description": "Premium heated beds for cats and small dogs to stay cozy during freezing nights.",
-    "image": "https://i.postimg.cc/example3.png",
+    "image": "https://sitmeanssitstl.com/wp-content/uploads/KH-PET-PRODUCTS-Heated-Thermo-Snuggle-Cup.png",
     "category": "Comfort"
   },
   {
@@ -44,7 +44,7 @@
     "rating": 4.6,
     "slotsAvailable": 6,
     "description": "Protect your pet’s paws from snow, ice, and salt with nourishing paw wax.",
-    "image": "https://i.postimg.cc/example4.png",
+    "image": "https://ae01.alicdn.com/kf/S0b65c507110341a7897137e70240a87dm.jpg",
     "category": "Grooming"
   },
   {
@@ -56,7 +56,7 @@
     "rating": 4.9,
     "slotsAvailable": 8,
     "description": "Safe and warm indoor play areas for dogs to stay active during winter months.",
-    "image": "https://i.postimg.cc/example5.png",
+    "image": "https://cdn.shopify.com/s/files/1/0025/8467/4417/products/trixie-kitten-play-and-scratch-activity-centre-lifestyle.jpg",
     "category": "Activity"
   },
   {
@@ -68,7 +68,7 @@
     "rating": 4.8,
     "slotsAvailable": 7,
     "description": "Seasonal nutrition advice and supplements to keep pets healthy and energetic in winter.",
-    "image": "https://i.postimg.cc/example6.png",
+    "image": "https://cdn.shopify.com/s/files/1/0585/6391/9934/files/Alpha-Paw-Cat-L-Lysine-Supplements-for-Cat-Alpha-Paw-76526145_350x@2x.jpg?v=1739556521",
     "category": "Nutrition"
   }
 ]
