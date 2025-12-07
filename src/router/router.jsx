@@ -6,6 +6,8 @@ import AuthLayout from "../layouts/AuthLayout";
 import Login from "../pages/Login";
 import SignUp from "../pages/SignUp";
 import ForgotPassword from "../components/ForgotPassword";
+import PrivateRoute from "../PrivateRoute/PrivateRoute";
+import ServiceDetails from "../components/ServiceDetails";
 
 const router = createBrowserRouter([
   {
@@ -29,7 +31,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/auth/forgetPassword",
-        element: <ForgotPassword></ForgotPassword>
+        element: <ForgotPassword></ForgotPassword>,
       },
       {
         path: "/auth/signUp",
@@ -38,9 +40,21 @@ const router = createBrowserRouter([
     ],
   },
   {
+    path: "/service/:id",
+    element: (
+      <PrivateRoute>
+        <ServiceDetails />
+      </PrivateRoute>
+    ),
+  },
+  {
     path: "/*",
-    element: <h2 className="text-[#131952] text-center text-4xl font-semibold mt-90">Error 404</h2>
-  }
+    element: (
+      <h2 className="text-[#131952] text-center text-4xl font-semibold mt-90">
+        Error 404
+      </h2>
+    ),
+  },
 ]);
 
 export default router;
