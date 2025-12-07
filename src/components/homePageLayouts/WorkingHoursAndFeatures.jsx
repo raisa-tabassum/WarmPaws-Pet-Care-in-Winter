@@ -34,10 +34,12 @@ const WorkingHoursAndFeatures = () => {
     },
   ];
   return (
-    <div className="flex flex-col md:flex-row gap-10 p-6 bg-white rounded-xl shadow-lg mx-6 mb-14">
+    <div className="flex flex-col md:flex-row gap-10 p-6 bg-white rounded-xl shadow-xl mx-6 mb-16">
       {/* Working Hours */}
       <div className="bg-gray-50 p-6 rounded-xl shadow-md w-full md:w-1/2">
-        <h3 className="text-lg font-semibold mb-4">Working Hours</h3>
+        <h3 className="text-lg font-semibold mb-2 text-[#131952]">
+          Working Hours
+        </h3>
         <p className="text-gray-500 mb-6">
           WarmPaws start their activity from morning 08am to till night 10pm.
         </p>
@@ -64,7 +66,9 @@ const WorkingHoursAndFeatures = () => {
           {" "}
           Features{" "}
         </h6>
-        <h2 className="text-2xl font-bold mb-6">Core Level Features</h2>
+        <h2 className="text-2xl font-bold my-4 not-visited:text-sky-950">
+          Core Level Features
+        </h2>
         <p className="text-gray-500 mb-6">
           At WarmPaws, we go to great extents to guarantee that your dog is in
           the best possible hands. We devote individual attention and sensitive

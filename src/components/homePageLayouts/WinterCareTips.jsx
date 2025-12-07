@@ -24,7 +24,7 @@ const winterCareTips = [
 const WinterCareTips = () => {
   return (
     <div className="p-5">
-      <h2 className="text-4xl text-[#001436] font-bold text-center mb-6">
+      <h2 className="text-4xl text-[#001436] font-bold text-center">
         Winter Care Tips for Pets
       </h2>
 

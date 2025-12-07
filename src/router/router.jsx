@@ -1,18 +1,17 @@
 import React from "react";
 import { createBrowserRouter } from "react-router";
-import Home from "../pages/Home";
 import HomeLayout from "../layouts/HomeLayout";
 import PopularWinterCareServices from "../components/homePageLayouts/PopularWinterCareServices";
+import AuthLayout from "../layouts/AuthLayout";
+import Login from "../pages/Login";
+import SignUp from "../pages/SignUp";
+import ForgotPassword from "../components/ForgotPassword";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <HomeLayout></HomeLayout>,
     children: [
-    // {
-      //   path: "/",
-      //   element: <Home></Home>,
-      // },
       {
         path: "/winterCareServices",
         element: <PopularWinterCareServices></PopularWinterCareServices>,
@@ -20,6 +19,28 @@ const router = createBrowserRouter([
       },
     ],
   },
+  {
+    path: "/auth",
+    element: <AuthLayout></AuthLayout>,
+    children: [
+      {
+        path: "/auth/login",
+        element: <Login></Login>,
+      },
+      {
+        path: "/auth/forgetPassword",
+        element: <ForgotPassword></ForgotPassword>
+      },
+      {
+        path: "/auth/signUp",
+        element: <SignUp></SignUp>,
+      },
+    ],
+  },
+  {
+    path: "/*",
+    element: <h2 className="text-[#131952] text-center text-4xl font-semibold mt-90">Error 404</h2>
+  }
 ]);
 
 export default router;

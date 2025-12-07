@@ -16,7 +16,7 @@ const PopularWinterCareServicesCard = ({ service }) => {
         <h2 className="card-title text-left text-[21px] font-bold">{serviceName}</h2>
         <div className="flex gap-30">
           <p className="text-xl font-semibold text-gray-600 flex items-center gap-1"><span><img className="w-5" src={ratings} alt="" /></span>{rating} Ratings</p>
-          <p className="text-xl font-semibold text-gray-600">{price} $</p>
+          <p className="text-xl font-semibold text-gray-600">{price}<span className="text-sky-950">$</span> </p>
         </div>
         <button className="btn btn-primary mt-2 mx-24 bg-blue-900 text-white">View Details</button>
       </div>

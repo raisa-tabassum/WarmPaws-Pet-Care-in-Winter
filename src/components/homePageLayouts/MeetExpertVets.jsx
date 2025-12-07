@@ -34,7 +34,7 @@ const experts = [
 
 const MeetExpertVets = () => {
   return (
-    <div className="p-5 my-8">
+    <div className="p-5 my-6">
       <h2 className="text-4xl text-[#001436] font-bold mb-5 text-center">
         Meet Our Expert Vets
       </h2>
