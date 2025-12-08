@@ -6,7 +6,7 @@ const PopularWinterCareServicesCard = ({ service }) => {
   //   console.log(service);
   const { image, serviceName, rating, price } = service;
   return (
-    <div className="card bg-base-200 w-96 shadow-lg px-2 rounded-2xl">
+    <div className="card bg-base-100 w-96 shadow-lg px-2 rounded-2xl">
       <figure>
         <img className="w-80 h-56 rounded-xl mt-6" src={image} alt="pets" />
       </figure>

@@ -4,9 +4,8 @@ import toast from "react-hot-toast";
 
 const Profile = () => {
   const { user, updateUserProfile, setUser } = useContext(AuthContext);
-
-  const [name, setName] = useState("");
-  const [photoURL, setPhotoURL] = useState("");
+  const [name, setName] = useState(user?.displayName || "");
+  const [photoURL, setPhotoURL] = useState(user?.photoURL || "");
 
   const handleUpdate = (e) => {
     e.preventDefault();
@@ -22,20 +21,27 @@ const Profile = () => {
       });
   };
   return (
-    <div className="max-w-md mx-auto mt-80 p-5 rounded-lg shadow-2xl">
+    <div className="max-w-md mx-auto mt-80 p-5 rounded-lg shadow-2xl bg-base-200 py-10">
       <h2 className="text-3xl text-[#131952] font-bold mb-5 text-center">
         Update Your Profile
       </h2>
-
       <form onSubmit={handleUpdate} className="space-y-4">
         {/* Show updated preview */}
         <div className="text-center">
           <img
             src={photoURL || "https://i.ibb.co/4pDNDk1/avatar.png"}
-            alt=""
+            alt="photoURL"
             className="w-20 h-20 rounded-full mx-auto"
           />
           <h3 className="text-xl font-semibold mt-2">{name}</h3>
+        </div>
+        <div>
+          <input
+            type="email"
+            className="input input-bordered w-full text-xl text-center text-[#131952]"
+            value={user?.email || ""}
+            disabled
+          />
         </div>
         <div>
           <label className="block mb-1 font-semibold">Name</label>

@@ -34,7 +34,7 @@ const WorkingHoursAndFeatures = () => {
     },
   ];
   return (
-    <div className="flex flex-col md:flex-row gap-10 p-6 bg-white rounded-xl shadow-xl mx-6 mb-16">
+    <div className="flex flex-col md:flex-row gap-10 p-6 bg-white rounded-xl shadow-xl mx-6">
       {/* Working Hours */}
       <div className="bg-gray-50 p-6 rounded-xl shadow-md w-full md:w-1/2">
         <h3 className="text-lg font-semibold mb-2 text-[#131952]">

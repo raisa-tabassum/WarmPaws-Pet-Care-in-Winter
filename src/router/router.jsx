@@ -1,6 +1,7 @@
 import React from "react";
 import { createBrowserRouter } from "react-router";
-import HomeLayout from "../layouts/HomeLayout";
+import MainLayout from "../layouts/MainLayout";
+import Home from "../pages/Home";
 import PopularWinterCareServices from "../components/homePageLayouts/PopularWinterCareServices";
 import AuthLayout from "../layouts/AuthLayout";
 import Login from "../pages/Login";
@@ -13,52 +14,50 @@ import Profile from "../pages/Profile";
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <HomeLayout></HomeLayout>,
+    element: <MainLayout />,    // <-- সব পেজে navbar/footer থাকবে
     children: [
       {
-        path: "/winterCareServices",
-        element: <PopularWinterCareServices></PopularWinterCareServices>,
+        path: "",
+        element: <Home />,
+      },
+      {
+        path: "winterCareServices",
+        element: <PopularWinterCareServices />,
         loader: () => "/services.json",
       },
+      {
+        path: "service/:id",
+        element: (
+          <PrivateRoute>
+            <ServiceDetails />
+          </PrivateRoute>
+        ),
+      },
+      {
+        path: "profile",
+        element: (
+          <PrivateRoute>
+            <Profile />
+          </PrivateRoute>
+        ),
+      },
     ],
   },
+
+  // AuthLayout separate (Navbar থাকবে না)
   {
     path: "/auth",
-    element: <AuthLayout></AuthLayout>,
+    element: <AuthLayout />,
     children: [
-      {
-        path: "/auth/login",
-        element: <Login></Login>,
-      },
-      {
-        path: "/auth/forgetPassword",
-        element: <ForgotPassword></ForgotPassword>,
-      },
-      {
-        path: "/auth/signUp",
-        element: <SignUp></SignUp>,
-      },
+      { path: "login", element: <Login /> },
+      { path: "forgetPassword", element: <ForgotPassword /> },
+      { path: "signUp", element: <SignUp /> },
     ],
   },
+
   {
-    path: "/service/:id",
-    element: (
-      <PrivateRoute>
-        <ServiceDetails />
-      </PrivateRoute>
-    ),
-  },
-  {
-    path: "/profile",
-    element: <Profile></Profile>,
-  },
-  {
-    path: "/*",
-    element: (
-      <h2 className="text-[#131952] text-center text-4xl font-semibold mt-90">
-        Error 404
-      </h2>
-    ),
+    path: "*",
+    element: <h2 className="text-center mt-20 text-3xl">404 Not Found</h2>,
   },
 ]);
 

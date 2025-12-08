@@ -33,7 +33,7 @@ const ServiceDetails = () => {
   }
 
   return (
-    <div className="max-w-3xl mx-auto mt-10 p-5">
+    <div className="max-w-2xl mx-auto mt-24 p-5">
       <h1 className="text-4xl font-bold text-blue-900 mb-5">
         {service.serviceName}
       </h1>
@@ -67,7 +67,7 @@ const ServiceDetails = () => {
           onChange={(e) => setEmail(e.target.value)}
           required
         />
-        <button className="btn bg-blue-900 text-white w-full">Book Now</button>
+        <button className="btn bg-blue-900 text-white w-full rounded-lg">Book Now</button>
       </form>
     </div>
   );

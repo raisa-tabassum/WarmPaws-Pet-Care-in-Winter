@@ -11,7 +11,7 @@ const HeroSlider = () => {
       autoplay={{ delay: 3000 }}
       loop={true}
       navigation={true}
-      //   pagination={{ clickable: true }}
+      className="rounded-xl"
     >
       {/* Slide 1 */}
       <SwiperSlide>
