@@ -22,8 +22,7 @@ const PopularWinterCareServicesCard = ({ service }) => {
             {rating} Ratings
           </p>
           <p className="text-xl font-semibold text-gray-600">
-            {price}
-            <span className="text-sky-950">$</span>{" "}
+            <span className="text-sky-950">$</span> {price}
           </p>
         </div>
         <button className="btn btn-primary mt-2 mx-24 bg-blue-900 text-white">

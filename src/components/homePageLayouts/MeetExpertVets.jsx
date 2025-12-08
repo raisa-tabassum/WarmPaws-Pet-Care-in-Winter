@@ -42,6 +42,9 @@ const MeetExpertVets = () => {
         {experts.map((vet) => (
           <div
             key={vet.id}
+            data-aos="fade-up"
+            data-aos-offset="120"
+            data-aos-duration="1200"
             className="card bg-base-100 shadow-lg rounded-xl py-2 my-6"
           >
             <figure>

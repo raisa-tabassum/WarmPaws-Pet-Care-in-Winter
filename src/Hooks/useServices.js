@@ -5,7 +5,7 @@ const useServices = () => {
   const [services, setServices] = useState([]);
 
   useEffect(() => {
-    axios("/services.json").then((data) => setServices(data.data));
+    axios.get("/services.json").then((data) => setServices(data.data));
   }, []);
   return { services };
 };

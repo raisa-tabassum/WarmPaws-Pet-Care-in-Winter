@@ -14,7 +14,7 @@ import Profile from "../pages/Profile";
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <MainLayout />,    // <-- সব পেজে navbar/footer থাকবে
+    element: <MainLayout />,
     children: [
       {
         path: "",
@@ -23,7 +23,7 @@ const router = createBrowserRouter([
       {
         path: "winterCareServices",
         element: <PopularWinterCareServices />,
-        loader: () => "/services.json",
+        loader: () => fetch("/services.json"),
       },
       {
         path: "service/:id",
@@ -43,8 +43,6 @@ const router = createBrowserRouter([
       },
     ],
   },
-
-  // AuthLayout separate (Navbar থাকবে না)
   {
     path: "/auth",
     element: <AuthLayout />,
@@ -56,8 +54,8 @@ const router = createBrowserRouter([
   },
 
   {
-    path: "*",
-    element: <h2 className="text-center mt-20 text-3xl">404 Not Found</h2>,
+    path: "/*",
+    element: <h2 className="text-center mt-20 text-3xl font-semibold text-[#093680]">Error 404</h2>,
   },
 ]);
 

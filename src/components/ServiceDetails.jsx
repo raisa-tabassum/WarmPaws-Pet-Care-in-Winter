@@ -33,7 +33,7 @@ const ServiceDetails = () => {
   }
 
   return (
-    <div className="max-w-2xl mx-auto mt-24 p-5">
+    <div className="max-w-2xl mx-auto mt-12 p-5">
       <h1 className="text-4xl font-bold text-blue-900 mb-5">
         {service.serviceName}
       </h1>

@@ -42,8 +42,6 @@ const SignUp = () => {
           photoURL: photo,
         });
 
-        await result.user.reload();
-
         toast.success("Signup Successful!");
         navigate("/");
       })

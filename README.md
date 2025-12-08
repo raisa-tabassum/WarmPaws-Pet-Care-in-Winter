@@ -1,16 +1,28 @@
-# React + Vite
+Project Name : WarmPaws – Pet Care in Winter
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Purpose : A cozy winter companion platform designed for pet owners to ensure their furry friends stay warm, safe, and healthy during the cold season. 
+Users can explore local pet care services, winter pet clothing, grooming options, and expert tips — all in one friendly interface.
 
-Currently, two official plugins are available:
+*Live URL : [Firebase Hosting URL](https://warmpaws-c5bb0.web.app)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Key Features : 
+- Fully responsive on mobile, tablet, and desktop
+- Firebase authentication with Email,Password & Google Sign-In
+- Protected Routes for service booking and profile
+- Password validation with uppercase, lowercase & minimum 6 characters
+- User Profile update (name and photo)
+- Hero slider showcasing pets in cozy winter outfits (Swiper.js)
+- Popular Winter Care Services section displaying JSON data
+- Winter care tips for pets and Meet Our Expert Vets section
+- Toast notifications for success & error (react-hot-toast)
+- Subtle animations (AOS)
+- SPA behavior: no reload errors on route change
 
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+NPM Packages Used : 
+*react-hot-toast – For showing toast notifications on success/error
+*swiper - For the hero slider
+*aos – Animate On Scroll for smooth animations
+*react-icons – For icons like paw, eye toggle, etc.
+*firebase – For authentication and user profile management
+*react-router – For route-based navigation
+*daisyui & tailwindcss – For UI components and styling
