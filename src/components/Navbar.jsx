@@ -17,7 +17,7 @@ const Navbar = () => {
       });
   };
   return (
-    <div className="navbar bg-base-100 shadow-xs px-5">
+    <div className="navbar bg-base-100 shadow-xs px-5 flex flex-col md:flex-row">
       <div className="navbar-start">
         <div className="flex items-center gap-2">
           <FaPaw className="text-4xl text-sky-500" />

@@ -7,8 +7,8 @@ import WorkingHoursAndFeatures from "../components/homePageLayouts/WorkingHoursA
 
 const Home = () => {
   return (
-    <div className="max-w-7xl mx-auto my-24 px-4 md:px-6 lg:px-0">
-        <section className="mx-8">
+    <div className="max-w-7xl mx-auto my-2 md:my-10 px-4 md:px-6 lg:px-0">
+        <section className="my-4 md:my-2 md:px-6">
             <HeroSlider />
         </section>
         <section>

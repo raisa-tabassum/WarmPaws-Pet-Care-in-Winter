@@ -7,7 +7,7 @@ import { Outlet } from "react-router";
 const MainLayout = () => {
   return (
     <div className="min-h-screen flex flex-col bg-base-300">
-      <div className="absolute top-0 left-0 w-full z-2">
+      <div className="sticky top-0 left-0 w-full z-2">
         <nav className="w-11/12 mx-auto mt-4">
           <Navbar></Navbar>
         </nav>
