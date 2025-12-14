@@ -48,15 +48,6 @@ const Login = () => {
       });
   };
 
-  const handleForgetPassword = () => {
-    if (!email) {
-      setError("Please enter your email first!");
-      return;
-    }
-    // Navigate with state
-    navigate("/auth/forgetPassword", { state: { email } });
-  };
-
   return (
     <div className="hero bg-base-200 min-h-screen">
       <div className="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
@@ -87,11 +78,9 @@ const Login = () => {
                 {show ? <FaEye></FaEye> : <IoEyeOff></IoEyeOff>}
               </span>
             </div>
-            <div onClick={handleForgetPassword}>
-              <a className="link link-hover hover:underline cursor-pointer">
+              <Link to="/auth/forgetPassword" state={{email}} className="link link-hover hover:underline cursor-pointer">
                 Forgot password?
-              </a>
-            </div>
+              </Link>
             <button className="btn btn-neutral mt-3 border-none bg-[#131952]">
               Login
             </button>
